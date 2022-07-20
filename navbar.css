@@ -7,7 +7,7 @@
 }
 #top-bar{
     /* border: 2px solid red; */
-    width: 70%;
+    width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12%;
+    width: 120px;
+    margin-right: 20px;
 }
 #links > a{
     text-decoration: none;
@@ -34,7 +35,7 @@
     height: auto;
 }
 #navbar > div{
-    width: 70%;
+    width: 1000px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -47,4 +48,20 @@
     padding: 12px 18px;
     font-size: 13px;
     font-weight: 600;
+}
+
+
+@media all and (min-width:481px) and (max-width:999px){
+    #top-bar{
+        border: 2px solid red;
+        width: 1000px;
+    }
+    #navbar{
+        width: 1000px;
+    }
+    #navbar > div{
+        border: 2px solid green;
+        width: 1000px;
+    }
+
 }

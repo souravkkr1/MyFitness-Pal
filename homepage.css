@@ -5,14 +5,11 @@
     font-family:  "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
     color:rgba(0, 0, 0, 0.87);
 }
-
-
 #check{
     
-    height: 511px;
+    height: 500px;
     /* border: 2px solid green; */
     display: flex;
-
 }
 #check > div:nth-child(1){
     /* border: 2px solid black; */
@@ -27,20 +24,19 @@
     /* border: 2px solid red; */
 }
 
-
-/* Banner */
+/* ---------------------------BANNER--------------------------------- */
 
 #container {
     position: absolute;
-    height: auto;
+    height: 515px;
     top:112px;
     right: 0;
     left: 0;
     width: 100%;
 }
 #container > div:nth-child(1){
-    height: auto;
-    width: 70%;
+    height: 511px;
+    width: 1000px;
     margin: auto;
     background-color: white;
     /* border: 2px solid blue; */
@@ -51,7 +47,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: auto;
+    height: 541px;
     width: 100%;
     /* z-index: 10; */
     /* position: relative; */
@@ -91,9 +87,9 @@
     background-color:#FFDD33 ;
     height: auto;
     position: relative;
-    /* top: -30px; */
+    /* top:-170px; */
     width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 #search-bar > div:nth-child(1){
     height: auto;
@@ -103,7 +99,7 @@
 #search-bar > div > img{
     /* border: 2px solid red; */
     height: auto;
-    width: 70%;
+    width: 1000px;
     display: block;
     margin: auto;
     position: relative;
@@ -111,7 +107,7 @@
 }
 #search-bar > div:nth-child(1) > div{
     /* border: 2px solid red; */
-    width: 70%;
+    width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -152,7 +148,7 @@
 
 #tools > div:nth-child(1) {
     /* border: 2px solid red; */
-    width: 70%;
+    width: 1000px;
     margin: 80px auto;
     text-align: center;
 }
@@ -172,7 +168,6 @@
    width: 100%;
    height: auto;
    display: flex;
-   
    justify-content: space-between;
    align-items: flex-start;
    margin-top: 40px;
@@ -206,7 +201,7 @@
 /* Stories Section */
 
 #stories{
-    width: 70%;
+    width: 1000px;
     /* border: 2px solid red; */
     height: auto;
     margin: 30px auto;
@@ -233,7 +228,7 @@
 /* Recipe Section */
 
 #recipe{
-    width: 70%;
+    width: 1000px;
     height: auto;
     margin: 80px auto;
     /* border: 2px solid green; */
@@ -281,7 +276,7 @@
     font-weight: bold;
 }
 #app{
-    width: 70%;
+    width: 1000px;
     height: auto;
     margin: auto;
     margin-bottom: 80px;
@@ -310,6 +305,41 @@
 }
 #app > div > img{
     margin: 10px;
+}
+
+
+@media all and (min-width:480px) and (max-width:999px){
+
+    /* #container > div:nth-child(1){
+        border:2x solid red;
+        width: 770px;
+    }
+    */
+
+    #search-bar{
+        width: 1000px;
+    }
+    #search-bar > div > img{
+        width: 1000px;
+    }
+    #search-bar > div:nth-child(1) > div{
+        width: 1000px;
+    }
+    #search{
+        width: 80%;
+    }
+    #tools > div:nth-child(1) {
+       padding: 0 100px;
+    }
+    #stories{
+        padding: 0 100px;
+    }
+    #recipe{
+        padding: 0 100px;
+    }
+    #app{
+        padding: 0 100px;
+    }  
 }
 
 

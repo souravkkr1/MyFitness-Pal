@@ -36,3 +36,9 @@ footer > div{
     text-align: center;
     padding-bottom: 20px;
 }
+
+@media all and (min-width:480px) and (max-width:999px){
+    footer{
+        width: 1000px;
+    }
+}
