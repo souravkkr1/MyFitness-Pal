@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+footer{
+  height: auto;
+  background-color: #F6F6F8;
+  display: flex;
+  flex-direction: column;
+}
+footer > div > ul{
+    height: auto;
+    width: 70%;
+    margin:auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer > select{
+    text-align: right;
+}
+
+footer > div > ul >li{
+    list-style: none;
+    padding:10px;
+    font-size: 12px;
+}
+footer >  div >ul >li >a{
+    text-decoration: none;
+    color: #0066EE;
+}
+footer > div{
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 20px;
+}

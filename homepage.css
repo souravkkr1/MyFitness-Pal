@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    color:rgba(0, 0, 0, 0.87);
+}
+
+
+#check{
+    
+    height: 511px;
+    /* border: 2px solid green; */
+    display: flex;
+
+}
+#check > div:nth-child(1){
+    /* border: 2px solid black; */
+    background-color: white;
+    height: auto;
+    width: 50%;
+}
+#check > div:nth-child(2){
+    background-color: #FFDD33;
+    width: 50%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+
+/* Banner */
+
+#container {
+    position: absolute;
+    height: auto;
+    top:112px;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+#container > div:nth-child(1){
+    height: auto;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    /* border: 2px solid blue; */
+}
+#container > div:nth-child(1) > div{
+    background-image: url(img/bg.webp);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    /* z-index: 10; */
+    /* position: relative; */
+    /* border: 2px solid orangered; */
+}
+#container > div:nth-child(1) > div >div{
+    /* border: 2px solid green; */
+    height: auto;
+    width: 50%;
+    margin:0 50px;
+    padding: 80px 0;
+}
+#container > div:nth-child(1) > div >div>h1{
+    font-size: 58px;
+    font-weight: 700;
+}
+#container > div:nth-child(1) > div >div>p{
+    margin: 30px 0;
+    width: 70%;
+    line-height: 1.5;
+}
+#container > div:nth-child(1) > div >div>button{
+    background-color: #0066EE;
+    color: white;
+    padding: 17px 78px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+}
+#container #login >a{
+    text-decoration: none;
+    color: #0066EE;
+}
+/*  SEARCH BAR */
+
+#search-bar{
+    background-color:#FFDD33 ;
+    height: auto;
+    position: relative;
+    /* top: -30px; */
+    width: 100%;
+    z-index: -1;
+}
+#search-bar > div:nth-child(1){
+    height: auto;
+    /* border: 2px solid black; */
+    width: 100%;
+}
+#search-bar > div > img{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 70%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 25px;
+}
+#search-bar > div:nth-child(1) > div{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    z-index: 2;
+}
+#search-bar > div:nth-child(1) > div:nth-child(1) > h2{
+    width: 60%;
+    font-size: 45px;
+    text-align: center;
+}
+#search-bar > div:nth-child(1) > div:nth-child(1) > p{
+    width: 50%;
+    text-align: center;
+    margin: 20px 0;
+}
+#search{
+    height: auto;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgb(193, 192, 192);
+}
+
+/* Tools Section */
+
+#tools{
+    /* border: 2px solid black; */
+    height: auto;
+    position: relative;
+    
+}
+
+#tools > div:nth-child(1) {
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: 80px auto;
+    text-align: center;
+}
+#tools > div > h2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+}
+#tools > div > p{
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+}
+#tools #boxes{
+   /* border: 2px solid green; */
+   width: 100%;
+   height: auto;
+   display: flex;
+   
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-top: 40px;
+}
+#tools #boxes > div{
+   /* border: 2px solid black; */
+   height: auto;
+   text-align: center;
+   width: 32%;
+   padding: 20px;
+}
+#tools #boxes > div > h4{
+   width: 100%;
+   text-align: center;
+   margin: 10px 0;
+   font-size: 20px;
+}
+#tools #boxes > div > p{
+   line-height: 1.5;
+}
+#tools > div > button{
+    background-color: #0066EE;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+/* Stories Section */
+
+#stories{
+    width: 70%;
+    /* border: 2px solid red; */
+    height: auto;
+    margin: 30px auto;
+}
+#stories > h2{
+    width: 50%;
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+}
+#stories > p{
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+#stories #box{
+    width: 80%;
+    box-shadow: 0 0 10px rgb(193, 192, 192);
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+}
+
+/* Recipe Section */
+
+#recipe{
+    width: 70%;
+    height: auto;
+    margin: 80px auto;
+    /* border: 2px solid green; */
+}
+#recipe > h2{
+    width: 50%;
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+}
+#recipe > p{
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px auto;
+}
+#recipe #box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#recipe #box > div{
+    /* border: 2px solid red; */
+    width: 31%;
+    border-radius: 9px;
+    height: 350px;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 10%);
+}
+#recipe #box > div >img{
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#recipe #box > div >h4{
+    padding: 20px;
+    font-size: 18px;
+}
+#recipe #box > div >p{
+    padding: 20px;
+    margin-top: 20px;
+    color: #0066EE;
+    font-weight: bold;
+}
+#app{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 80px;
+    /* border: 2px solid red; */
+}
+#app > h2{
+    width: 450px;
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+}
+#app > p{
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+#app > img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+#app > div{
+    text-align: center;
+    margin: 50px;
+}
+#app > div > img{
+    margin: 10px;
+}
+
+
+
+

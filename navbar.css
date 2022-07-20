@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+}
+#top-bar{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#top-bar > h1{
+    margin: 18px;
+    color: #0066EE;
+}
+#links{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12%;
+}
+#links > a{
+    text-decoration: none;
+    color: #0066EE;
+    font-size: 14.4px;
+}
+#navbar{
+    background-color: #0066EE;
+    width: 100%;
+    height: auto;
+}
+#navbar > div{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#navbar > div > a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
