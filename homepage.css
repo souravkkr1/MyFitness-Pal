@@ -204,25 +204,70 @@
     width: 1000px;
     /* border: 2px solid red; */
     height: auto;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 #stories > h2{
     width: 50%;
     font-size: 48px;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
 }
 #stories > p{
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 60px;
     line-height: 1.5;
 }
+#stories > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#stories > div >div:nth-child(1), #stories > div >div:nth-child(3){
+    /* border: 2px solid red; */
+    width: 8%;
+    text-align: center;
+}
+#stories >  div > div button{
+    font-size: 30px;
+    padding: 10px 15px;
+    font-weight: 100;
+    color: grey;
+}
+#stories > div >div:nth-child(2){
+    /* border: 2px solid blue; */
+    width: 82%;
+}
+
 #stories #box{
-    width: 80%;
+    width: 100%;
     box-shadow: 0 0 10px rgb(193, 192, 192);
-    height: 400px;
+    height: 500px;
     margin: 20px auto;
     display: flex;
+    /* padding: 30px; */
+}
+#stories #box > div:nth-child(1){
+    /* border: 2px solid red; */
+    background-image: url(img/victory-story-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+#stories #box > div:nth-child(2){
+    /* border: 2px solid red; */
+    width: 60%;
+    padding: 30px;
+}
+#stories #box > div:nth-child(2) > p{
+    margin-top: 90px;
+    font-size: 24px;
+}
+#stories #box > div:nth-child(2) > p+p{
+    margin-top: 90px;
+    font-size: 24px;
+    text-align: right;
 }
 
 /* Recipe Section */
@@ -309,12 +354,6 @@
 
 
 @media all and (min-width:480px) and (max-width:999px){
-
-    /* #container > div:nth-child(1){
-        border:2x solid red;
-        width: 770px;
-    }
-    */
 
     #search-bar{
         width: 1000px;

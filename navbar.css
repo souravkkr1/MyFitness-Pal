@@ -5,34 +5,48 @@
     box-sizing: border-box;
     font-family:  "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
 }
+
 #top-bar{
     /* border: 2px solid red; */
-    width: 1000px;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1000;
 }
 #top-bar > h1{
     margin: 18px;
+    width: 500px;
+    padding-left: 25px;
+}
+#top-bar > h1 > a {
+    text-decoration: none;
     color: #0066EE;
 }
 #links{
     /* border: 2px solid black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 120px;
+    width: 500px;
     margin-right: 20px;
 }
 #links > a{
     text-decoration: none;
     color: #0066EE;
     font-size: 14.4px;
+    margin-right: 20px;
 }
 #navbar{
+    position: sticky;
+    top: 72px;
     background-color: #0066EE;
     width: 100%;
     height: auto;
+    z-index: 1000;
 }
 #navbar > div{
     width: 1000px;
