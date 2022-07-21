@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    color:rgba(0, 0, 0, 0.87);
+}
+h2, h4{
+    color: #0066EE;
+}
+p{
+    font-size: 14px;
+}
+#layout{
+    width: 1000px;
+    /* border: 2px solid red; */
+    margin: 70px auto;
+    height: auto;
+    display: flex;
+}
+
+/* SIDEBAR SECTION */
+
+#sidebar {
+    height: 350px;
+    width: 30%;
+    position: sticky;
+    top: 141px;
+}
+#sidebar > form{
+    padding: 20px 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+}
+#sidebar > form > p{
+    margin-bottom: 25px;
+    text-align: center;
+}
+#sidebar > form >  button{
+    background-color: #0066EE;
+    color: white;
+    padding: 17px 48px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+    cursor: pointer;
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 8px 10px;
+}
+.data{
+    width: 100%;
+}
+label{
+    font-size: 13px;
+}
+#remember{
+    display: inline;
+}
+form > input:last-child{
+    width: 90%;
+    cursor: pointer;
+}
+
+/* BODY SECTION */
+
+    
+#body {
+    width: 70%;
+    font-size: 18px;
+    /* border: 2px solid red; */
+}
+#about{
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+#about > h2{
+    border-bottom: 1px solid rgb(215, 213, 213);
+}
+#about > p{
+    margin-top: 20px;
+}
+
+#how-it-works, #dont-wait{
+    height: auto;
+    margin-top: 40px;
+    width: 100%;
+}
+#how-it-works > div, #dont-wait > div  {
+    background-color: #f6f6f6;
+    border: 1px solid #e6e6e6;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91%;
+    margin: auto;
+}
+#how-it-works > div > div, #dont-wait > div > div {
+    /* border: 2px solid green; */
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    display: inline-block;
+}
+#how-it-works > div > div > h4 {
+    margin-bottom: 20px;
+}
+#how-it-works > div > div > p {
+    font-size: 15px;
+}
+#how-it-works > div > div > p:last-child, #dont-wait > div > div > p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Membershiop Section */
+
+#membership{
+    padding:30px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+#membership > ul > li> p{
+    margin-top: 10px;
+}
+#membership > ul > li> p > span{
+    font-weight: bold;
+}
+
+/* Don't wait section */
+
+#dont-wait > div > img{
+    width: 25%;
+}
+#dont-wait > div > div > button{
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
