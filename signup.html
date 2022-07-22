@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="login-signup.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="top-bar">
+
+        <h1><a href="homepage.html">myfitnesspal</a></h1>
+        <div id="links">
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <div id="navbar">
+        <div>
+
+            <a href="/about.html">ABOUT</a>
+            <a href="">FOOD</a>
+            <a href="">EXERCISE</a>
+            <a href="">APPS</a>
+            <a href="login.html">COMMUNITY</a>
+            <a href="">BLOG</a>
+            <a href="">PREMIUM</a>
+        </div>
+    </div>
+    <div id="container">
+        <form>
+            <h4>Sign Up</h4>
+            <input type="text" name="name" id="name" placeholder="Full Name" required>
+            <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <a href="#">Terms & conditions</a>
+            <input type="submit" value="SIGN UP">
+            <p>or</p>
+        </form>
+        <button>CONTINUE WITH FACEBOOK</button>
+    </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", signupFunc);
+    let userList=JSON.parse(localStorage.getItem("users")) || [];
+
+    
+    function signupFunc(event) {
+    event.preventDefault();
+    let userDetail={
+        name:document.querySelector("#name").value,
+        phone:document.querySelector("#phone").value,
+        email:document.querySelector("#email").value,
+        pass:document.querySelector("#password").value
+    }
+    userList.push(userDetail);
+    localStorage.setItem("users", JSON.stringify(userList));
+    window.location.assign("homepage.html")
+};
+</script>
+</html>
