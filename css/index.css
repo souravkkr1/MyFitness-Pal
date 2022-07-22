@@ -42,7 +42,7 @@
     /* border: 2px solid blue; */
 }
 #container > div:nth-child(1) > div{
-    background-image: url(img/bg.webp);
+    background-image: url(../img/bg.webp);
     background-color: #fff;
     background-size: cover;
     background-position: center;

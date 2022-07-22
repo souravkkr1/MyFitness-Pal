@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="login-signup.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/login-signup.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Login</title>
 </head>
 <body>
     <div id="top-bar">
 
-        <h1><a href="homepage.html">myfitnesspal</a></h1>
+        <h1><a href="index.html">myfitnesspal</a></h1>
         <div id="links">
                 <a href="login.html">Log In</a>
                 <a href="signup.html">Sign Up</a>
@@ -33,38 +33,14 @@
     <div id="container">
         <form>
             <h4>Member Login</h4>
-            <input type="email" name="email" id="email" placeholder="Email Address">
-            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
             <a href="#">Forgot password?</a>
             <input type="submit" value="LOG IN">
             <p>or</p>
-            <button>CONTINUE WITH FACEBOOK</button>
         </form>
+        <button>CONTINUE WITH FACEBOOK</button>
     </div>
 </body>
-<script>
-    document.querySelector("form").addEventListener("submit", loginFunction);
-    let userList=JSON.parse(localStorage.getItem("users"));
-
-    function loginFunction(event){
-        event.preventDefault();
-
-        let email=document.querySelector("#email").value;
-        let pass=document.querySelector("#password").value;
-
-        let flag=false;
-        for(let i=0; i<userList.length; i++){
-            if(email==userList[i].email && pass==userList[i].pass){
-                flag=true;
-            }
-            if(flag==true){
-                alert("Log in successful")
-                window.location.assign("about.html")
-            }else{
-                alert("Wrong email or password");
-            }
-        }
-    }
-    
-</script>
+<script src="js/login.js"></script>
 </html>
