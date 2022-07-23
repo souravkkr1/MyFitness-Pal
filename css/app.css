@@ -3,6 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+h2{
+    color: #0066EE;
+    line-height: 1.8;
+}
+#top-bar > #links > #username{
+    font-weight: 700;
+    color: #008000;
+    font-size: 16px;
+    text-decoration: underline;
+}
+#top-bar > #links > #username+a:hover{
+    font-weight: 700;
+    color: #0448a2;
+}
 #layout{
     width: 70%;
     /* border: 2px solid red; */
@@ -41,9 +55,8 @@
     cursor: pointer;
 }
 
-
-
 /* App Display ---- Featured Apps && App Marketplace---- All Apps */
+
 #featured-app, #app-marketplace{
     /* border: 2px solid red; */
     height: auto;
@@ -106,12 +119,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-
-
-
-
-
-
+/* SIDEBAR >>>>>>>>>>> */
 
 #sidebar{
     width: 30%;

@@ -238,9 +238,6 @@ leftBtn.addEventListener("click", function () {
 
 // Featured App
 
-let featured = [];
-
-
 appList.map(function (ele) {
 
     if (ele.tag == "featured") {
@@ -262,23 +259,51 @@ appList.map(function (ele) {
 
     }
 });
-appList.map(function (ele) {
 
-    let box = document.createElement("div");
-    let details = document.createElement("div");
-    let img = document.createElement("img");
-    img.src = ele.img;
-    let name = document.createElement("p");
-    name.innerText = ele.name;
-    let category = document.createElement("p");
-    let button = document.createElement("button");
-    button.innerText = "GET";
+// All Apps >>>>>>>>>>>>>>>>>
 
-    details.append(name, category, button);
-    box.append(img, details);
-    document.querySelector("#allApp-grid").append(box);
+displayApps(appList);
 
+function displayApps(appList) {
+    document.querySelector("#allApp-grid").innerHTML = null;
+    appList.map(function (ele) {
+
+        let box = document.createElement("div");
+        let details = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = ele.img;
+        let name = document.createElement("p");
+        name.innerText = ele.name;
+        let category = document.createElement("p");
+        category.innerText = ele.category;
+        let button = document.createElement("button");
+        button.innerText = "GET";
+
+        details.append(name, category, button);
+        box.append(img, details);
+        document.querySelector("#allApp-grid").append(box);
+    });
+}
+
+
+document.querySelector("#displayCat").addEventListener("click", function (event) {
+    let select = event.target.innerText;
+
+    let filteredList = appList.filter(function (ele) {
+        return ele.category == select;
+    });
+    displayApps(filteredList);
+
+    if (select == "All") {
+        displayApps(appList);
+    }
 });
+
+// Log Out >>>>>>>>>>>>>>>>>>>>
+
+let loggedUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+document.querySelector("#username").innerText = "Welcome, " + loggedUser.name;
 
 
 

@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+#imp{
+    text-align: center;
+    color: red;
+    width: 15%;
+    margin: 30px auto;
+    border-bottom: 1px solid red;
+}
 #container{
     width: 35%;
     margin: 40px auto;
@@ -36,6 +43,9 @@ input{
     cursor: pointer;
     margin-top: 20px;
 }
+#container > form > a+input:hover{
+    background-color: #0448a2;
+}
 form > p{
     text-align: center;
 }
@@ -43,9 +53,16 @@ form > p{
     margin-top: 10px;
     padding: 15px;
     width: 100%;
-    background-color:rgb(66, 103, 178); ;
+    background-color:rgb(118, 178, 66);
     border: none;
     border-radius: 5px;
-    color: white;
     cursor: pointer;
+    font-size: 16px;
+}
+#container > button:hover{
+    background-color: rgb(74, 130, 26);
+}
+#container > button > a{
+    text-decoration: none;
+    color: white;
 }

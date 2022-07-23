@@ -22,5 +22,3 @@ leftBtn.addEventListener("click", function () {
     slider.src = sliderLinks[sliderState];
 })
 
-    // SIGN UP ---------------------------- //
-
