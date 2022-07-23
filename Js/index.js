@@ -1,5 +1,3 @@
-
-
 let sliderLinks = ['img/s1.png', 'img/s2.png', 'img/s3.png']
 
 let leftBtn = document.querySelector("#left-btn");
@@ -23,6 +21,4 @@ leftBtn.addEventListener("click", function () {
     }
     slider.src = sliderLinks[sliderState];
 })
-
-    // SIGN UP ---------------------------- //
 

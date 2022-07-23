@@ -12,5 +12,5 @@ function signupFunc(event) {
     }
     userList.push(userDetail);
     localStorage.setItem("users", JSON.stringify(userList));
-    window.location.assign("index.html")
+    window.location.assign("login.html")
 };

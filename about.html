@@ -24,7 +24,7 @@
                 <a href="/about.html">ABOUT</a>
                 <a href="">FOOD</a>
                 <a href="">EXERCISE</a>
-                <a href="">APPS</a>
+                <a href="signup.html">APPS</a>
                 <a href="login.html">COMMUNITY</a>
                 <a href="">BLOG</a>
                 <a href="">PREMIUM</a>
@@ -71,7 +71,7 @@
                     <div>
                         <p>All the tools you need for healthy, sustainable weight loss are right at your fingertips - and you'll never have to pay a cent! So what are you waiting for? Stop wasting money on other dieting programs.</p>
                         <p>Join today and get on the path to healthier living!</p>
-                        <button>Join Now For FREE!</button>
+                        <button><a href="signup.html">Join Now For FREE!</a></button>
                     </div>
                 </div>
             </div>
@@ -84,15 +84,17 @@
             
             <form>
                 <h4>Member Login</h4>
-                <button>Login with Facebook</button>
+                <button><a href="signup.html">Create an account</a></button>
                 <p>or</p>
-                <label>Username:</label>
-                <input class="data" type="text" name="username" id="username">
-                <label>Password:</label>
-                <input class="data" type="password" name="password" id="password">
-                <input type="checkbox" name="remember" id="remember">
-                <label>Remember me next time</label>
-                <input type="submit" value="Login">
+                <form>
+                    <label>Email:</label>
+                    <input class="data" type="email" name="email" id="email" required>
+                    <label>Password:</label>
+                    <input class="data" type="password" name="password" id="password" required>
+                    <input type="checkbox" name="remember" id="remember">
+                    <label>Remember me next time</label>
+                    <input type="submit" value="Login">
+                </form>
             </form>
         </div>
     </div>
@@ -122,5 +124,5 @@
     </footer>
 
 </body>
-<script src="js/index.js"></script>
+<script src="js/about.js"></script>
 </html>

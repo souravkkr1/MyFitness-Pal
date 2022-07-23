@@ -37,14 +37,20 @@ p{
     text-align: center;
 }
 #sidebar > form >  button{
-    background-color: #0066EE;
-    color: white;
+    background-color: rgb(118, 178, 66);
     padding: 17px 48px;
     border-radius: 4px;
     border: none;
     font-weight: 600;
     margin: 10px 0 30px 0;
     cursor: pointer;
+}
+#sidebar > form >button:hover{
+    background-color: rgb(74, 130, 26);
+}
+#sidebar > form >button >a{
+    text-decoration: none;
+    color: white;
 }
 input{
     display: block;
@@ -140,9 +146,16 @@ form > input:last-child{
 #dont-wait > div > div > button{
     padding: 10px 25px;
     background-color: green;
-    color: white;
     border: none;
     border-radius: 4px;
     margin-top: 20px;
 }
+#dont-wait > div > div > button:hover{
+    background-color: rgb(3, 153, 3);
+}
+#dont-wait > div > div > button > a{
+    text-decoration: none;
+    color: white;
+}
+
 

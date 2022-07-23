@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    color: #0066EE;
+    line-height: 1.8;
+}
+#top-bar > #links > #username{
+    font-weight: 700;
+    color: #008000;
+    font-size: 16px;
+    text-decoration: underline;
+}
+#top-bar > #links > #username+a:hover{
+    font-weight: 700;
+    color: #0448a2;
+}
+#layout{
+    width: 70%;
+    /* border: 2px solid red; */
+    margin: 70px auto;
+    height: auto;
+    display: flex;
+}
+#body{
+    width: 70%;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+#body > #carousel{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#body > #carousel >img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    border: 1px solid rgb(190, 188, 188);
+}
+#body > #carousel > button{
+    padding: 8px 12px;
+    border-radius: 50%;
+    border: none;
+    color: gray;
+    height: 10%;
+}
+#body > #carousel > button:hover{
+    background-color: rgb(193, 190, 190);
+    color: white;
+    cursor: pointer;
+}
+
+/* App Display ---- Featured Apps && App Marketplace---- All Apps */
+
+#featured-app, #app-marketplace{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 100%;
+    margin: 50px 0;
+}
+#app-marketplace{
+    margin: 100px 0;
+}
+#featured-app > h2, #app-marketplace > h2{
+    border-bottom: 1px solid rgb(190, 188, 188);
+    margin-bottom: 25px;
+}
+#fApp-grid, #allApp-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+    height: auto;
+    /* border: 2px solid orange; */
+}
+#fApp-grid > div, #allApp-grid > div{
+    /* border: 2px solid black; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#fApp-grid > div > img, #allApp-grid > div > img{
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+#fApp-grid > div > div, #allApp-grid > div > div{
+    width: 60%;
+    /* border: 2px solid green; */
+}
+#fApp-grid > div > div > p, #allApp-grid > div > div > p{
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #0066EE;
+}
+#fApp-grid > div > div > p+p, #allApp-grid > div > div > p+p{
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #999999;
+}
+#fApp-grid > div > div > button, #allApp-grid > div > div > button{
+    padding: 5px 35px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(77, 76, 76);
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#fApp-grid > div > div > button:hover, #allApp-grid > div > div > button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* SIDEBAR >>>>>>>>>>> */
+
+#sidebar{
+    width: 30%;
+    height: 50%;
+    position: sticky;
+    top: 141px;
+    padding: 0 30px;
+}
+#sidebar > input{
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 20px;
+    background-color: rgb(246, 243, 243);
+    border: 1px solid rgb(190, 188, 188);;
+}
+#sidebar > h2{
+    font-size: 16px;
+    margin: 16px 0px 0px 0px;
+    padding: 0 0 10px;
+    color: #0066EE;
+}
+#sidebar  > ul > li{
+    list-style: none;
+    padding: 13px;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(190, 188, 188);
+    color: #0066EE;
+}
+#sidebar  > ul > li:hover{
+    color: white;
+    background-color: #0066EE;
+    cursor: pointer;
+}
+#sidebar  > ul > li:visited{
+    color: white;
+    background-color: #0066EE;
+}
+
+
+
+
+
+
+
+
